@@ -5,17 +5,17 @@ export const items = [
       price: '$50'
     },
     {
-      name: "chelsea boot",
+      name: "Adidas",
       imge: 'https://pyxis.nymag.com/v1/imgs/f99/322/09dcb56bca0be8142f2d06b16460b45a91-cloudfoam-01-.w600.jpg',
       price: '$80'
     },
     {
-      name: "loavers",
+      name: "White Addidas ",
       imge: 'https://media.schuhmuecke.de/media/image/ca/e5/c8/676498_01_600x600.png',
       price: '$25'
     },
     {
-      name: "loavers",
+      name: "Adidas footware",
       imge: 'https://en-kw.sssports.com/dw/image/v2/BDVB_PRD/on/demandware.static/-/Sites-akeneo-master-catalog/default/dw867917dd/sss/A/D/B/ADB44870_4059809401767_2.jpg?sw=700&sh=700&sm=fit',
       price: '$25'
     },

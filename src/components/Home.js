@@ -1,13 +1,16 @@
 import React from 'react'
-import NavBar from './NavBar'
+import CreateItems from './CreateItems'
 import Products from './Products'
+import { ItemProvider } from './ItemContext'
 
 const Home = () => {
     return (
-        <div>
-            <NavBar />
+        <ItemProvider>
+          <div>
             <Products />
-        </div>
+            <CreateItems />
+        </div>  
+        </ItemProvider>
     )
 }
 
