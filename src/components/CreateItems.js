@@ -7,7 +7,7 @@ const CreateItems = () => {
     const [productName, setProductName] = useState('')
     const [productPrice, setProductPrice] = useState(0)
     const [productImg, setProductImg] = useState('')
-    const [items, setItems] = useContext(ItemContext);
+    const [setItems] = useContext(ItemContext);
 
     //function to add item
     const addItem = (e) => {

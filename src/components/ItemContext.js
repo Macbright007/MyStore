@@ -1,9 +1,11 @@
-import React, {useState, createContext} from 'react'
+import React, {useState, createContext, useReducer } from 'react'
+import { cartReducer } from './Reducers';
 
-export const ItemContext = createContext();
 
-export const ItemProvider = (props) => {
-    const [items, setItems] = useState([
+export const ItemContext = createContext({ state: { items: [], cart: []}});
+
+export const ItemProvider = ({children}) => {
+    const [items] = useState([
         {
           name: "React Reserve",
           imge: 'https://www.ajebomarket.com/pub/media/catalog/product/cache/61376d537388a894e3b8d4825ffa2133/a/i/air-force-1-low-gore-tex-olivesequoia-release-date_2_.jpg',
@@ -47,9 +49,14 @@ export const ItemProvider = (props) => {
         
       ]);
 
+      const [state, dispatch] = useReducer(cartReducer, {
+        items: items,
+        cart: []
+      });
+
       return(
-        <ItemContext.Provider value={[items, setItems]}>
-            {props.children}
+        <ItemContext.Provider value={{ state, dispatch }}>
+            {children}
         </ItemContext.Provider>
       );
 }

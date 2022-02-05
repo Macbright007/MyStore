@@ -1,16 +1,14 @@
 import React from 'react'
-import CreateItems from './CreateItems'
+//import CreateItems from './CreateItems'
 import Products from './Products'
-import { ItemProvider } from './ItemContext'
+
 
 const Home = () => {
     return (
-        <ItemProvider>
           <div>
             <Products />
-            <CreateItems />
+            {/* <CreateItems /> */}
         </div>  
-        </ItemProvider>
     )
 }
 
